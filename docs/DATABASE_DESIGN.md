@@ -195,3 +195,107 @@ Owned Parts
 Custom Combo
 
 Part <----> Compatibility Rule <----> Part
+
+
+
+## Initial Table Design
+
+### products
+Stores official Beyblade products.
+
+- id
+- product_code
+- name
+- product_line
+- manufacturer
+- region
+- release_type
+- release_date
+- verification_status
+- catalog_source
+
+---
+
+### parts
+Stores reusable Beyblade components.
+
+- id
+- name
+- part_type
+- part_code
+- product_line
+- connection_standard
+- description
+
+---
+
+### part_variants
+Stores color or release variations of a part.
+
+- id
+- part_id
+- color
+- variant_name
+- image_path
+- model_path
+
+---
+
+### product_contents
+Connects official products to the parts they contain.
+
+- id
+- product_id
+- part_variant_id
+- quantity
+
+---
+
+### collection_items
+Stores products personally owned by the user.
+
+- id
+- product_id
+- quantity
+- condition
+- purchase_date
+- purchase_price
+- notes
+
+---
+
+### owned_parts
+Tracks individual parts available in the user's collection.
+
+- id
+- part_variant_id
+- quantity
+- source_product_id
+- condition
+- notes
+
+---
+
+### custom_combos
+Stores custom Beyblade builds.
+
+- id
+- name
+- blade_part_id
+- ratchet_part_id
+- bit_part_id
+- created_at
+- notes
+
+---
+
+### compatibility_rules
+Stores special compatibility restrictions.
+
+- id
+- part_a_id
+- part_b_id
+- status
+- reason
+- source
+- last_verified

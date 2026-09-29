@@ -32,7 +32,7 @@ The application will identify the product and its components:
 
 ## Future Features
 
-- QR code scanning
+- Data Matrix code scanning
 - Wishlist tracking
 - Duplicate tracking
 - Battle history

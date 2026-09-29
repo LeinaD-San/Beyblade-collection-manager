@@ -67,7 +67,7 @@ Users can save custom Beyblade combinations.
 
 These features will be added later:
 
-- QR scanning
+- Data Matrix code scanning
 - Battle tracking
 - Wishlist
 - Marketplace pricing
